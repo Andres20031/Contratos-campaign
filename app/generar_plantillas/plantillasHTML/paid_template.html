@@ -36,13 +36,13 @@
         <p><strong>ENTRE</strong></p>
         <p><strong>THE 'PRISM' GROUP, INC.</strong></p>
         <p><strong>y</strong></p>
-        <p><strong>{{ NOMBRE_LEGAL_INFLUENCER }}</strong></p>
+        <p><strong>{{ NOMBRE_INFLUENCER }}</strong></p>
     </div>
 
     <p>En la ciudad de {{ CIUDAD }}, a {{ DIA }} de {{ MES }} de {{ ANIO }}, entre <strong>The Prism Group,
             Inc.</strong>, en adelante indistintamente, <strong> 'PRISM'</strong>, Rol Único Tributario número
         90-0923495, representada legalmente por la señora Julissa Nova, con domicilio en 11370 NW 61st. Doral, Florida
-        33178, correo electrónico Julissanova@prismgrp.com; por una parte; y <strong>{{ NOMBRE_INFLUENCER }}</strong> ,
+        33178, correo electrónico Julissanova@prismgrp.com; por una parte; y {{ NOMBRE_INFLUENCER }} ,
         en adelante e indistintamente el/la <strong>'INFLUENCER'</strong>, documento de identidad Nº {{ DOCUMENTO }},
         domiciliado(a) en esta ciudad, calle {{ DIRECCION }}, número {{ NUMERO }}, Sector de {{ SECTOR }}, Provincia,
         correo electrónico {{ EMAIL }}; por la otra, quienes han convenido celebrar el siguiente contrato de prestación
@@ -52,7 +52,7 @@
     <!-- //////////////////////////////////////////////////////primera seccion ////////////////////////////////////////////////////////-->
     <p><strong>PRIMERO: Antecedentes:</strong> <strong> 'PRISM'</strong>, es una empresa líder en comunicaciones
         estratégicas, que presta servicios a distintas empresas en todos los ámbitos del quehacer empresarial en
-        Latinoamérica. En tal sentido presta servicios a su cliente <strong>{{ NOMBRE_CLIENTE }}</strong>, en adelante
+        Latinoamérica. En tal sentido presta servicios a su cliente {{ NOMBRE_CLIENTE }}, en adelante
         indistintamente el <strong>'CLIENTE'</strong>, entre los que se incluyen apoyos en sus comunicaciones digitales
         y estratégicas.</p>
     <p>Por su parte el/la <strong>'INFLUENCER'</strong>, es un(a) creador(a) de contenido, entre otras iniciativas
@@ -61,11 +61,12 @@
     <!-- //////////////////////////////////////////////////////segunda seccion ////////////////////////////////////////////////////////-->
     <p><strong>SEGUNDO: Objeto del contrato.</strong> Por el presente instrumento, <strong>'PRISM'</strong>, en
         cumplimiento del requerimiento de su cliente, contrata a el/la <strong>'INFLUENCER'</strong> para que éste(a) le
-        preste sus servicios como influenciador/a de la marca "<strong>{{ PRODUCTO }}</strong>", en la generación de
+        preste sus servicios como influenciador/a de la marca "{{ NOMBRE_CLIENTE }}", en la generación de
         contenidos, sean publicitarios, de marketing o de otro índole, con el objeto de ser usados en RRSS, para
-        visibilizar y promocionar la campaña "<strong>{{ CAMPANA }}</strong>" en adelante la <strong>'CAMPAÑA'</strong>
+        visibilizar y promocionar la campaña "{{ CAMPANA }}" en adelante la <strong>'CAMPAÑA'</strong>
         ya sea por sí o a través de sus alias profesional o nombre artístico, marcas comerciales, logotipos,
         fotografías, semejanza, voz, firma y/o actuación.</p>
+
     <p>Para estos efectos, la expresión "generación de contenidos", en adelante indistintamente el
         <strong>'MATERIAL'</strong> incluye, pero no queda limitado a cualquier contenido con su imagen o voz a través
         de cualquier medio disponible y sin limitación, ya sean de distribución, publicación, exhibición, y/o
@@ -149,6 +150,9 @@
         otra índole, podrá ejercer en relación con las Obras todos los derechos de explotación, edición, publicación,
         traducción; distribución; comercialización; reproducción; comunicación pública; transformación y adaptación, en
         cualquier tipo de soporte conocido o por conocer y/o desarrollar.
+        
+    </p>
+    <p>
         En caso de que el/la ‘INFLUENCER’ use materiales de terceras personas, deberá tener las autorizaciones
         respectivas y obtener todas las licencias, liberaciones, permisos y consentimientos necesarios que se requieran
         para cualquier persona, lugar, objeto u otra propiedad intelectual de terceros. Al efecto, el/la ‘INFLUENCER’
@@ -158,77 +162,49 @@
     </p>
 
     <!-- //////////////////////////////////////////////////////sexto seccion ////////////////////////////////////////////////////////-->
-    <h3>Sexto: Vigencia del contrato</h3>
     <p>
-        El presente contrato tendrá una vigencia inicial de <strong>[PERIODO]</strong>, comenzando a regir día {{diaEP}}
+        <strong>Sexto: Vigencia del contrato</strong> El presente contrato tendrá una vigencia inicial de {{periodo}}, comenzando a regir <strong>día {{diaEP}}
         del mes de {{mesEP}} del año {{anioEP}} y
-        terminando el día {{diaTP}} del mes de {{mesTP}} del año {{anioTP}}. El presente Contrato podrá prorrogarse por
+        terminando el día {{diaTP}} del mes de {{mesTP}} del año {{anioTP}}.</strong>  El presente Contrato podrá prorrogarse por
         el tiempo que las partes estimen conveniente,
         mediante acuerdo respaldado por un documento debidamente suscrito o por correo electrónico donde se manifieste
         dicha prórroga.
     </p>
 
     <!-- //////////////////////////////////////////////////////septima seccion ////////////////////////////////////////////////////////-->
-    <h3>Séptimo: Compensación, precio y condiciones de pago</h3>
+
     <p>
-        Por los servicios y autorizaciones objeto de este contrato, ‘PRISM’ pagará a el/la ‘INFLUENCER’ la suma única y
+        <strong>Séptimo: Compensación, precio y condiciones de pago</strong>  Por los servicios y autorizaciones objeto de este contrato, ‘PRISM’ pagará a el/la ‘INFLUENCER’ la suma única y
         total de
-        <strong>[VALOR EN NUMERO Y LETRAS]</strong> dólares. Dicho pago se realizará previa presentación de una boleta
+        {{Vl_compensacion}} dólares. Dicho pago se realizará previa presentación de una boleta
         de honorarios,
-        de acuerdo con los servicios realizados. El/La ‘INFLUENCER’ absorberá el monto correspondiente a los impuestos
-        locales.
+        de acuerdo con los servicios realizados. El/La ‘INFLUENCER’ por su parte, absorberá el monto correspondiente a los impuestos locales.
     </p>
 
     <p>
-        Los honorarios serán pagados en dos partes (30% al inicio del contrato y 70% al completar todas las
-        responsabilidades asumidas en este contrato).
-        Cada boleta será pagada a los 30 días siguientes a la fecha de su recepción, mediante depósito o transferencia
-        bancaria en la siguiente cuenta:
+        Los honorarios serán pagados en dos partes (30% al inicio del contrato y 70% al completar todas las responsabilidades asumidas en este contrato). 
+       Cada boleta será pagada a los 30 días siguientes a la fecha de su recepción, mediante depósito o transferencia bancaria en la siguiente cuenta bancaria indicada por el/la ‘INFLUENCER’.
     </p>
 
+    <p>
+        Adicionalmente, como parte de la compensación por los servicios prestados, el/la ‘INFLUENCER’ recibirá un dispositivo {{Marca_Modelo}}, el cual tiene un valor monetario de {{device_cost}}. El/La ‘INFLUENCER’ se hace responsable ante cualquier daño, robo o pérdida del mismo y asume el compromiso de que en cualquiera de las eventualidades mencionadas anteriormente, continuará generando el contenido acordado en este contrato. De igual forma en caso de robo o pérdida, el/la ‘INFLUENCER’ se compromete a compartir con ‘PRISM’ el reporte policíaco o documento similar firmado por las autoridades competentes, como evidencia de los hechos.
+    </p>
+    <p>
+        Se deja expresa constancia que será responsabilidad de ‘PRISM’ obtener los fondos necesarios para realizar el pago de los horarios/compensaciones estipulados en este contrato.
+    </p>
+
+ <!-- //////////////////////////////////////////////////////octavo  seccion ////////////////////////////////////////////////////////-->
+    <p>
+       <Strong>Octavo: Detalle de los servicios contratados</Strong> Por otro lado, el/la ‘INFLUENCER’ deberá cumplir con la siguiente cantidad de contenido en las redes sociales mencionadas y 
+       con las fechas de publicación estipuladas en el Calendario de Contenidos incluido como “APÉNDICE 1” en este contrato:
+    </p>
+   
     <ul>
-        <li>Nombre titular: <strong>{{NOMBRE_INFLUENCER}}</strong></li>
-        <li>Banco: _________________________</li>
-        <li>Tipo de Cuenta: __________________________</li>
-        <li>Nº de Cuenta: _______________________</li>
-        <li>Email confirmación: __________________________</li>
+        <li>{{Agreed_IG_Reels}} Reel en la plataforma Instagram</li>
+        <li>{{Agreed_IG_Posts}} Carrusel de fotos en la plataforma Instagram</li>
+        <li>{{Agreed_IG_Stories}} Set de historias en la plataforma Instagram</li>
+        <li>{{Agreed_TT_Videos}} Video en la plataforma de TikTok</li>
     </ul>
-
-    <p>
-        Como parte de la compensación por los servicios prestados, el/la ‘INFLUENCER’ recibirá un dispositivo
-        <strong>{{Marca_Modelo}}</strong>,
-        con un valor de <strong>[xxx]</strong>. El/La ‘INFLUENCER’ se hace responsable ante cualquier daño, robo o
-        pérdida del mismo
-        y se compromete a continuar generando el contenido acordado. En caso de robo o pérdida, deberá compartir con
-        ‘PRISM’ un reporte policíaco
-        como evidencia.
-    </p>
-
-    <p>
-        Será responsabilidad de ‘PRISM’ obtener los fondos necesarios para realizar el pago de los
-        honorarios/compensaciones estipulados.
-    </p>
-
-    <h3>Octavo: Detalle de los servicios contratados</h3>
-    <p>
-        El/La ‘INFLUENCER’ deberá cumplir con el siguiente contenido en redes sociales según el calendario incluido como
-        “APÉNDICE 1”:
-    </p>
-    <!-- //////////////////////////////////////////////////////octavo  seccion ////////////////////////////////////////////////////////-->
-    <ul>
-        <li>{{Agreed_IG_Reels}} Reel en Instagram</li>
-        <li>{{Agreed_IG_Posts}} Carrusel de fotos en Instagram</li>
-        <li>{{Agreed_IG_Stories}} Set de historias en Instagram</li>
-        <li>{{Agreed_TT_Videos}} Video en TikTok</li>
-    </ul>
-
-    <h3>Nota sobre propiedad intelectual</h3>
-    <p>
-        El/La ‘INFLUENCER’ deberá tener las autorizaciones necesarias si usa materiales de terceros, incluyendo
-        licencias, liberaciones o consentimientos,
-        y entregar copias a ‘PRISM’. En caso contrario, será responsable y deberá mantener libre de toda responsabilidad
-        a ‘PRISM’ y al ‘CLIENTE’.
-    </p>
 
     <p>
         El/La ‘INFLUENCER’ se compromete a compartir una Grilla de Contenidos mensualmente, la cual incluirá detalles
@@ -249,16 +225,16 @@
     </p>
 
     <ul>
-        <li>Un promedio de XXXX Interacciones (likes + comentarios) en la plataforma de Instagram, y XXXX Interacciones
+        <li>Un promedio de {{promedio_ig_In}} Interacciones (likes + comentarios) en la plataforma de Instagram, y {{promedio_tt_In}} Interacciones
             en la plataforma de TikTok, para los contenidos contratado en feed.</li>
-        <li>Un promedio de XXX Impresiones (visualizaciones) en la plataforma de Instagram, y XXXX Impresiones en la
+        <li>Un promedio de {{promedio_ig_Im}} Impresiones (visualizaciones) en la plataforma de Instagram, y {{promedio_tt_Im}} Impresiones en la
             plataforma de TikTok, para los contenidos contratados, incluyendo historias.</li>
-        <li>Un total de XXX Interacciones y XXX Impresiones durante toda la ‘CAMPAÑA’.</li>
+        <li>Un total de {{total_interacciones}} Interacciones y {{total_impresiones}} Impresiones durante toda la ‘CAMPAÑA’.</li>
         
     </ul>
 
     <p>
-        Un mínimo de X% de ER (Engagement Rate) para los contenidos contratado en feed de Instagram y X% de ER para  los contenidos contratado en TikTok.
+        Un mínimo de {{engagement_ig}}% de ER (Engagement Rate) para los contenidos contratado en feed de Instagram y {{engagement_tt}}% de ER para  los contenidos contratado en TikTok.
     </p>
     <p>
         El/La ‘INFLUENCER’ se compromete a crear contenido adicional a lo contratado, de manera que pueda alcanzar el
@@ -267,12 +243,11 @@
 
     <p>
         Adicionalmente, siempre y cuando su agenda se lo permita, el/la ‘INFLUENCER’ se compromete a asistir a por lo
-        menos [xx] eventos locales (digitales o presenciales) organizados por el ‘CLIENTE’ en la ciudad de [CIUDAD]
-        durante la duración de este contrato.
+        menos {{event}} eventos locales (digitales o presenciales) organizados por el ‘CLIENTE’ durante la duración de este contrato.
     </p>
     <!-- //////////////////////////////////////////////////////noveno  seccion ////////////////////////////////////////////////////////-->
     <p>
-        NOVENO: Terminación anticipada: Sin perjuicio de lo anterior, ‘PRISM’ tendrá derecho a poner término al presente
+        <strong> NOVENO: Terminación anticipada: Sin perjuicio de lo anterior:</strong> ‘PRISM’ tendrá derecho a poner término al presente
         contrato en forma inmediata, sin necesidad de declaración judicial ni reembolso o indemnización alguna para
         el/la ‘INFLUENCER’, mediante aviso escrito enviado al domicilio o correo electrónico señalado en la
         comparecencia, que producirá efectos al mismo momento de su comunicación, ante la ocurrencia de uno o cualquiera
@@ -306,7 +281,7 @@
     </p>
     <!-- //////////////////////////////////////////////////////noveno  seccion ////////////////////////////////////////////////////////-->
     <p>
-        DÉCIMO: OBLIGACIÓN DE CONFIDENCIALIDAD. Las partes se obligan recíproca e irrevocablemente a guardar estricta
+       <strong>DÉCIMO: OBLIGACIÓN DE CONFIDENCIALIDAD.</strong>  Las partes se obligan recíproca e irrevocablemente a guardar estricta
         confidencialidad de toda la información de que tomen conocimiento con motivo o con ocasión de la ejecución del
         presente contrato y se comprometen a no divulgar a terceros dicha información, ya sea que la misma se refiera a
         la otra parte, sus respectivos clientes, o de cualquier sociedad controladora, controlada o sujeta a control
@@ -362,11 +337,11 @@
 
     <!-- //////////////////////////////////////////////////////undecimo  seccion ////////////////////////////////////////////////////////-->
     <p>
-        UNDÉCIMO: OBLIGACIÓN DE EXCLUSIVIDAD. El/La ‘INFLUENCER’ se obliga a cumplir con el servicio y demás
+        <strong> UNDÉCIMO: OBLIGACIÓN DE EXCLUSIVIDAD.</strong> El/La ‘INFLUENCER’ se obliga a cumplir con el servicio y demás
         prestaciones objeto del presente Contrato en forma exclusiva para ‘PRISM’ y el ‘CLIENTE’, para el rubro de
-        [INDUSTRIA] absteniéndose de prestar servicios similares a los pactados en este acto para otras empresas que
+        {{industria}} absteniéndose de prestar servicios similares a los pactados en este acto para otras empresas que
         desarrollen el mismo o similar rubro comercial de el {{NOMBRE_CLIENTE}}. Esto significa, que el/la ‘INFLUENCER’ no podrá
-        promover ningún producto, servicio ni marca dentro de las categorías [ESPECIFICAR CATEGORIAS] que no sean de el
+        promover ningún producto, servicio ni marca dentro de las categorías {{categorias}} que no sean de el
         {{NOMBRE_CLIENTE}}. La exclusividad a que se refiere esta cláusula se mantendrá durante toda la vigencia del presente
         contrato, y su incumplimiento, hará aplicable las disposiciones contenidas en la cláusula Novena precedente.
     </p>
@@ -382,7 +357,7 @@
     </p>
 
     <p>
-        DUODÉCIMO: OTRAS DECLARACIONES. El/la ‘INFLUENCER’ declara y garantiza lo siguiente en favor de ‘PRISM’ y el
+        <strong> DUODÉCIMO: OTRAS DECLARACIONES.</strong> El/la ‘INFLUENCER’ declara y garantiza lo siguiente en favor de ‘PRISM’ y el
         ‘CLIENTE’ en relación con el presente Contrato:
     </p>
 
@@ -413,7 +388,7 @@
 
     <p>
         11.6.a) Cualquier reclamo, pérdida o daño de cualquier tipo que podría surgir por el uso inapropiado de sus
-        dispositivos, o en cualquier conexión con cualquier defecto o insuficiencia del cualquier equipo [Marca]
+        dispositivos, o en cualquier conexión con cualquier defecto o insuficiencia del cualquier equipo {{NOMBRE_CLIENTE}}
         otorgado a mi persona, por cualquier razón.<br>
         11.6.b) Cualquier deficiencia o defecto en su uso o funcionamiento.<br>
         11.6.c) Cualquier interrupción o pérdida de circulación o uso.
@@ -427,7 +402,7 @@
     </p>
 
     <p>
-        DÉCIMOTERCERO: RESOLUCIÓN DE CONFLICTOS. MEDIACIÓN Y ARBITRAJE. Cualquier duda y dificultad que se suscite entre
+        <strong>DÉCIMOTERCERO: RESOLUCIÓN DE CONFLICTOS.</strong>  MEDIACIÓN Y ARBITRAJE. Cualquier duda y dificultad que se suscite entre
         las partes con motivo del presente contrato, de sus estipulaciones o acuerdos, ya sea que dichas dudas o
         dificultades se refieran a su existencia o inexistencia, validez o nulidad, cumplimiento o incumplimiento,
         aplicación, interpretación, ejecución o terminación o cualquiera otra materia relacionada directa o
@@ -449,20 +424,20 @@
     </p>
 
     <p>
-        DÉCIMOCUARTO: CESIBILIDAD. Las partes acuerdan que este contrato, así como los derechos y obligaciones derivados
+        <strong>DÉCIMOCUARTO: CESIBILIDAD.</strong>  Las partes acuerdan que este contrato, así como los derechos y obligaciones derivados
         del mismo, no podrán cederse ni tramitarse por ningún título, total o parcialmente, salvo que mediare
         consentimiento expreso y por escrito a ese efecto del otro contratante.
     </p>
 
     <p>
-        DÉCIMOQUINTO: FALTA O RETARDO EN EL EJERCICIO DE FACULTADES O DERECHOS. La falta o retardo en el ejercicio de
+        <strong> DÉCIMOQUINTO: FALTA O RETARDO EN EL EJERCICIO DE FACULTADES O DERECHOS.</strong> La falta o retardo en el ejercicio de
         cualquiera de las facultades o derechos que, en virtud del presente contrato, le corresponden a las partes, no
         podrá ser considerada como una renuncia a los mismos, por lo que podrán ejercer en el tiempo y forma que estimen
         conveniente, respetando las normas legales que fueren aplicables.
     </p>
 
     <p>
-        DÉCIMOSEXTO: ACUERDO ÍNTEGRO. - El Contrato contiene el acuerdo íntegro entre las partes, por lo que se declara
+        <strong>DÉCIMOSEXTO: ACUERDO ÍNTEGRO.</strong>  - El Contrato contiene el acuerdo íntegro entre las partes, por lo que se declara
         expresamente que el presente instrumento reemplaza y deja sin efecto cualquier otro contrato, acuerdo o
         convención anterior sobre la misma materia.
     </p>
@@ -476,13 +451,13 @@
     </p>
 
     <p>
-        DÉCIMOSÉPTIMO: LEYES APLICABLES. El presente instrumento y su aplicación, ejecución e interpretación, así como
+        <strong>DÉCIMOSÉPTIMO: LEYES APLICABLES.</strong>  El presente instrumento y su aplicación, ejecución e interpretación, así como
         cualquier otro aspecto relacionado con él, se regirá por las leyes de Panamá, fijando las partes para todos los
         efectos a que haya lugar como domicilio la ciudad y comuna de la Ciudad de Panamá.
     </p>
 
     <p>
-        DÉCIMOCTAVO: PERSONERÍA. La personería de Julissa Nova para actuar en representación de The Prism Group, Inc.
+        <strong>DÉCIMOCTAVO: PERSONERÍA.</strong>  La personería de Julissa Nova para actuar en representación de The Prism Group, Inc.
         consta en los estatutos públicos de incorporación con fecha 04 de enero de 2013 Otorgado por el Estado de la
         Florida
     </p>
@@ -495,11 +470,9 @@
 
     <br>
 
-    <p><strong>En acuerdo por {{NOMBRE_LEGAL_INFLUENCER}}</strong></p>
-    <p>Nombre: _{{NOMBRE_LEGAL_INFLUENCER}}________________________________________________<br>
+    <p><strong>En acuerdo por {{NOMBRE_INFLUENCER}}</strong></p>
+    <p>Nombre: _________________________________________________<br>
         Firma: _________________________________________________</p>
-
-
 </body>
 
 </html>

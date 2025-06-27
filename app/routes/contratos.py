@@ -14,26 +14,27 @@ def recibir_contrato():
     """
     try:
         data = request.json
+
         if not data:
             return jsonify({"error": "No se recibió información"}), 400
 
         contrato_data = data.get("contrato_data")
         influencer_data = data.get("influencer_data")
+        customer_data = data.get("customer_data")
+        grupos_cliente = data.get("grupos_cliente")
 
         if not contrato_data:
             return jsonify({"error": "Falta 'contrato_data'"}), 400
 
-        tipo = contrato_data.get("Contract Type")  # Ahora está dentro de contrato_data
+        tipo = contrato_data.get("Contract Type", "Paid Campaign")  # valor por defecto
 
-        # Aún si falta el tipo, puedes dejar pasar y tratar con un valor por defecto
-        if not tipo:
-            tipo = "Paid Campaign"  # o simplemente omitir validación si ya no es obligatorio
-
-        # Lógica basada en tipo de contrato
+        # Decisión según tipo de contrato
         if tipo == "Paid Campaign":
-            resultado = generarPaidPdf(contrato_data, influencer_data)
+            resultado = generarPaidPdf(contrato_data, influencer_data, customer_data,grupos_cliente)
         elif tipo == "In-kind partnership":
-            resultado = GenerarNonPaidPdf(contrato_data, influencer_data)
+            resultado = GenerarNonPaidPdf(contrato_data, influencer_data, customer_data,grupos_cliente)
+        elif tipo == "Other":
+            resultado = GenerarNonPaidPdf(contrato_data, influencer_data, customer_data,grupos_cliente)
         else:
             return jsonify({"error": f"Tipo de contrato no soportado: {tipo}"}), 400
 

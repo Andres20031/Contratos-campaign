@@ -1,0 +1,1 @@
+from .contratos import recibir_contrato

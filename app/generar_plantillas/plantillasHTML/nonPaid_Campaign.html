@@ -2,10 +2,10 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Compromiso de Colaboración</title>
-  <style>
-   body {
+    <meta charset="UTF-8">
+    <title>Contrato Prestación de Servicios</title>
+    <style>
+        body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12pt;
             line-height: 1.5;
@@ -14,36 +14,19 @@
             word-spacing: 2px;
         }
 
-    .center {
-      text-align: center;
-    }
+        .center {
+            text-align: center;
+        }
 
-    .underline {
-      text-decoration: underline;
-    }
+        .underline {
+            text-decoration: underline;
+        }
 
-    strong {
-      font-weight: bold;
-    }
+        strong {
+            font-weight: bold;
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 15px 0;
-    }
-
-    table,
-    th,
-    td {
-      border: 1px solid black;
-    }
-
-    th,
-    td {
-      padding: 8px;
-      text-align: left;
-    }
-  </style>
+        }
+    </style>
 </head>
 
 <body>
@@ -57,27 +40,27 @@
     Florida 33178,
   </p>
   <p>
-    y <span class="highlight-green">[NOMBRE DEL INFLUENCER]</span>, en adelante e indistintamente el/la ‘INFLUENCER’,
-    documento de identidad Nº <span class="highlight">[NÚMERO DEL DOCUMENTO DE IDENTIDAD]</span>, con domicilio en esta
-    ciudad, <span class="highlight">[DIRECCIÓN COMPLETA]</span>.
+    y <span class="highlight-green">{{NOMBRE_LEGAL_INFLUENCER}}</span>, en adelante e indistintamente el/la ‘INFLUENCER’,
+    documento de identidad Nº <span class="highlight">{{DOCUMENTO}}</span>, con domicilio en esta
+    ciudad, <span class="highlight">{{DIRECCION}}</span>.
   </p>
 
   <p class="section-title">PERÍODO DEL ACUERDO</p>
   <p>Este acuerdo tiene una vigencia de <span class="highlight">número en letras (número)</span> meses.</p>
-  <p>Fecha de Inicio: <span class="highlight">[día] de [mes] de [año]</span>.<br>
-    Fecha de Finalización: <span class="highlight">[día] de [mes] de [año]</span>.</p>
+  <p>Fecha de Inicio: <span class="highlight">{{diaEP}} de {{mesEP}} de {{anioEP}}</span>.<br>
+    Fecha de Finalización: <span class="highlight">{{diaTP}} de {{mesTP}} de {{anioTP}}</span>.</p>
 
   <p class="section-title">TÉRMINOS Y CONDICIONES</p>
   <p>Este acuerdo se realiza por INTERCAMBIO – el/la ‘INFLUENCER’ recibirá productos en especie para su promoción en las
     redes sociales durante el periodo especificado – bajo las consideraciones indicadas a continuación:</p>
-
+  <!-- //////////////////////objetivo 1 ////////////////////-->
   <p class="section-title">1. Objetivo de la Colaboración:</p>
   <p>
-    ‘PRISM’, en representación de su cliente <span class="highlight-green">[NOMBRE CLIENTE]</span>, en adelante
+    ‘PRISM’, en representación de su cliente <span class="highlight-green">{{NOMBRE_CLIENTE}}</span>, en adelante
     indistintamente el ‘CLIENTE’, establece un acuerdo de colaboración con el/la ‘INFLUENCER’ para que éste(a) le preste
-    sus servicios como influenciador/a de la marca <span class="highlight">“[ESPECIFICAR PRODUCTO O MARCA]”</span>, en
+    sus servicios como influenciador/a de la marca <span class="highlight">“{{NOMBRE_CLIENTE}}”</span>, en
     la generación de contenidos, sean publicitarios, de marketing o de otra índole, con el objeto de ser usados en RRSS,
-    para visibilizar y promocionar la campaña <span class="highlight">“[NOMBRE DE LA CAMPANA]”</span> en adelante la
+    para visibilizar y promocionar la campaña <span class="highlight">“{{CAMPANA}}”</span> en adelante la
     ‘CAMPAÑA’.
   </p>
 
@@ -94,7 +77,7 @@
   </p>
   <p>
     ‘PRISM’ entregará a el/la ‘INFLUENCER’ en compensación por sus servicios, un dispositivo <span
-      class="highlight">[ESPECIFICAR MODELO Y MARCA]</span> para su uso personal.
+      class="highlight">{{Marca_Modelo}}</span> para su uso personal.
   </p>
   <p>
     El/la ‘INFLUENCER’ entiende que, una vez recibido el dispositivo, como parte de la compensación por la generación de
@@ -125,7 +108,7 @@
 
   <p class="section-title">5. Detalles de la Generación de Contenidos:</p>
   <p>
-    a. El/la ‘INFLUENCER’ se compromete a generar contenido de el ‘CLIENTE’ y promoverlo en su perfil de Instagram @xxxxxx y TikTok @xxxxxx resaltando su experiencia de uso del dispositivo [ESPECIFICAR MODELO Y MARCA], así como cualquier otra campaña que el ‘CLIENTE’ requiera su colaboración. 
+    a. El/la ‘INFLUENCER’ se compromete a generar contenido de el ‘CLIENTE’ y promoverlo en su perfil de Instagram @{{User_ig}} y TikTok @{{User_tt}} resaltando su experiencia de uso del dispositivo {{Marca_Modelo}}, así como cualquier otra campaña que el ‘CLIENTE’ requiera su colaboración. 
   </p>
   <p>
     b. El/la ‘INFLUENCER’ se compromete a cumplir con el siguiente número de publicaciones, las cuales se asignarán asignar para el uso de el ‘CLIENTE’ durante el período de duración de este acuerdo.
@@ -134,26 +117,27 @@
   <table>
     <thead>
       <tr>
-        <th>Período</th>
-        <th># de IG Stories</th>
-        <th># de IG Posts</th>
-        <th># de IG TV</th>
-        <th># de IG Reels</th>
-        <th># de TikToks</th>
+        <th style="text-align: center;">Período</th>
+        <th style="text-align: center;"># de IG Stories</th>
+        <th style="text-align: center;"># de IG Posts</th>
+        <th style="text-align: center;"># de IG TV</th>
+        <th style="text-align: center;"># de IG Reels</th>
+        <th style="text-align: center;"># de TikToks</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>Rango de fecha del Mes1</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes2</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes3</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes4</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes5</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes6</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes7</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td>Rango de fecha del Mes8</td><td>6</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>
-      <tr><td><strong>Totales</strong></td><td><strong>48 IG Stories</strong></td><td><strong>16 IG Posts</strong></td><td><strong>8 IG TV</strong></td><td><strong>8 IG Reels</strong></td><td><strong>8 TT Videos</strong></td></tr>
+      <tr><td>Rango de fecha del Mes1</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes2</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes3</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes4</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes5</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes6</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes7</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td>Rango de fecha del Mes8</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
+      <tr><td><strong>Totales</strong></td><td style="text-align: center;"><strong>48 IG Stories</strong></td><td style="text-align: center;"><strong>16 IG Posts</strong></td><td style="text-align: center;"><strong>8 IG TV</strong></td><td style="text-align: center;"><strong>8 IG Reels</strong></td><td style="text-align: center;"><strong>8 TT Videos</strong></td></tr>
     </tbody>
   </table>
+
   <!-- Continuación del acuerdo -->
   <p>
     c. El/la “INFLUENCER” asume la responsabilidad de realizar las publicaciones en el período indicado en el punto (5) parte (b) de este acuerdo. En el caso que el/la ‘INFLUENCER’ no pueda cumplir con alguna publicación, deberá notificar previamente a ‘PRISM’, indicando la fecha en que dicho contenido será re-pautado.
@@ -199,7 +183,7 @@
 
   <p class="section-title">9. Cesión Derechos de Imagen:</p>
   <p>
-    a. Por un plazo de seis (6) meses, seguidos a la firma de este acuerdo (iniciando el día ____del mes de _________del año ___ y terminando día ____del mes de _________del año ___; el/la ‘INFLUENCER’ cede sus derechos de imagen a el ‘CLIENTE’.
+    a. Por un plazo de {{periodo}}, seguidos a la firma de este acuerdo (iniciando el día {{diaEP}} del mes de {{mesEP}} del año {{anioEP}} y terminando día {{diaTP}} del mes de {{mesTP}} del año {{anioTP}}; el/la ‘INFLUENCER’ cede sus derechos de imagen a el ‘CLIENTE’.
   </p>
   <p>
     b. Específicamente autoriza a el ‘CLIENTE’ a utilizar sus contenidos e imágenes (fotografías, videos, textos) que promueven la marca de el ‘CLIENTE’ y sus productos, para reproducir y difundir los mismos en todos los medios técnicos y soportes conocidos en la actualidad, particularmente los soportes escritos, audiovisuales y electrónicos, incluido internet y los que pudieran desarrollarse durante el plazo de duración de este acuerdo.
@@ -213,7 +197,7 @@
   <p><strong>Nombre:</strong> Vanessa Soriano<br>
   <strong>Título:</strong> Director Influencer Marketing</p>
 
-  <p>En acuerdo por <strong>[NOMBRE LEGAL INFLUENCER]</strong></p>
+  <p>En acuerdo por <strong>{{NOMBRE_LEGAL_INFLUENCER}}</strong></p>
   <p><strong>Nombre:</strong> ___________________________________________________________<br>
   <strong>Dirección:</strong> ______________________________________________________________</p>
   <p><strong>Firma:</strong> ______________________________________________________________</p>
