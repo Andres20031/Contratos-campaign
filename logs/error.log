@@ -715,3 +715,110 @@ TypeError: GenerarNonPaidPdf() takes 2 positional arguments but 3 were given
 [2025-06-27 13:55:39,837] INFO - 👍Contrato paid-campaign
 [2025-06-27 13:55:39,838] INFO - 📝 Generando contrato Paid Campaign
 [2025-06-27 13:55:40,882] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contratoPaigCampaign\contrato_CNT-039.pdf
+[2025-06-27 14:14:36,241] INFO - 👍Contrato in-kind partnership
+[2025-06-27 14:14:36,245] INFO - ['Kitchen Appliances', 'Mobile Devices', 'Monitors', 'Laundry', 'Wearables', 'Computing']
+[2025-06-27 14:14:36,246] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 14:14:37,231] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-019.pdf
+[2025-06-27 14:29:04,665] INFO - 👍Contrato paid-campaign
+[2025-06-27 14:29:04,669] INFO - 📝 Generando contrato Paid Campaign
+[2025-06-27 14:29:05,782] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contratoPaigCampaign\contrato_CNT-005.pdf
+[2025-06-27 14:44:09,100] INFO - 👍Contrato paid-campaign
+[2025-06-27 14:44:09,102] INFO - 📝 Generando contrato Paid Campaign
+[2025-06-27 14:44:10,315] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contratoPaigCampaign\contrato_CNT-005.pdf
+[2025-06-27 14:44:48,070] INFO - 👍Contrato in-kind partnership
+[2025-06-27 14:44:48,071] INFO - ['Wearables', 'Laundry', 'Mobile Devices', 'Computing', 'Kitchen Appliances', 'Monitors']
+[2025-06-27 14:44:48,071] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 14:44:48,938] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-013.pdf
+[2025-06-27 14:51:24,903] INFO - 👍Contrato in-kind partnership
+[2025-06-27 14:51:24,904] INFO - ['Laundry', 'Wearables', 'Monitors', 'Mobile Devices', 'Computing', 'Kitchen Appliances']
+[2025-06-27 14:51:24,905] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 14:51:25,876] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-013.pdf
+[2025-06-27 15:04:30,289] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:04:30,291] INFO - ['Laundry', 'Mobile Devices', 'Wearables', 'Kitchen Appliances', 'Computing', 'Monitors']
+[2025-06-27 15:04:30,291] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:04:31,261] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-007.pdf
+[2025-06-27 15:08:32,547] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:08:32,552] INFO - ['Monitors', 'Mobile Devices', 'Laundry', 'Computing', 'Wearables', 'Kitchen Appliances']
+[2025-06-27 15:08:32,553] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:08:32,580] ERROR - ❌ Error generando PDF: unexpected '}'
+Traceback (most recent call last):
+  File "C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\generar_plantillas\nonPaidCampaign.py", line 31, in GenerarNonPaidPdf
+    template = env.get_template("nonPaid_Campaign.html")
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\generar_plantillas\plantillasHTML\nonPaid_Campaign.html", line 144, in template
+    <td style="text-align: center;"><strong>{{} Agreed_IG_Reels}</strong></td>
+    ^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+[2025-06-27 15:08:43,214] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:08:43,214] INFO - ['Computing', 'Laundry', 'Wearables', 'Kitchen Appliances', 'Monitors', 'Mobile Devices']
+[2025-06-27 15:08:43,214] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:08:43,221] ERROR - ❌ Error generando PDF: unexpected '}'
+Traceback (most recent call last):
+  File "C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\generar_plantillas\nonPaidCampaign.py", line 31, in GenerarNonPaidPdf
+    template = env.get_template("nonPaid_Campaign.html")
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\generar_plantillas\plantillasHTML\nonPaid_Campaign.html", line 144, in template
+    <td style="text-align: center;"><strong>{{} Agreed_IG_Reels}</strong></td>
+    ^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+[2025-06-27 15:09:17,109] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:09:17,110] INFO - ['Wearables', 'Computing', 'Mobile Devices', 'Kitchen Appliances', 'Laundry', 'Monitors']
+[2025-06-27 15:09:17,110] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:09:17,116] ERROR - ❌ Error generando PDF: unexpected '}'
+Traceback (most recent call last):
+  File "C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\generar_plantillas\nonPaidCampaign.py", line 31, in GenerarNonPaidPdf
+    template = env.get_template("nonPaid_Campaign.html")
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\AndresCarmona\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\generar_plantillas\plantillasHTML\nonPaid_Campaign.html", line 144, in template
+    <td style="text-align: center;"><strong>{{} Agreed_IG_Reels}</strong></td>
+    ^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+[2025-06-27 15:10:12,094] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:10:12,096] INFO - ['Kitchen Appliances', 'Mobile Devices', 'Laundry', 'Computing', 'Monitors', 'Wearables']
+[2025-06-27 15:10:12,097] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:10:13,069] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-007.pdf
+[2025-06-27 15:10:57,171] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:10:57,172] INFO - ['Mobile Devices', 'Computing', 'Kitchen Appliances', 'Wearables', 'Laundry', 'Monitors']
+[2025-06-27 15:10:57,172] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:10:58,011] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-007.pdf
+[2025-06-27 15:11:30,141] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:11:30,142] INFO - ['Kitchen Appliances', 'Laundry', 'Computing', 'Wearables', 'Monitors', 'Mobile Devices']
+[2025-06-27 15:11:30,143] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:11:30,971] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-009.pdf
+[2025-06-27 15:12:36,091] INFO - 👍Contrato in-kind partnership
+[2025-06-27 15:12:36,093] INFO - ['Computing', 'Kitchen Appliances', 'Wearables', 'Laundry', 'Mobile Devices', 'Monitors']
+[2025-06-27 15:12:36,093] INFO - 📝 Generando contrato in-kind partnership
+[2025-06-27 15:12:37,022] INFO - ✅ PDF generado: C:\Users\AndresCarmona\OneDrive - ILBG S.A.S\Desktop\contratos-seatable\contratos-seatable\app\contratos_pdf\contrato_In-kind_partnership\contrato_CNT-009.pdf

@@ -98,8 +98,43 @@ def calcular_total_impresiones(data):
         data.get("TT Views", 0) or 0
     ])
 
+def generar_contenido_por_periodo(fecha_inicio, fecha_fin, contrato_data):
+    meses = []
+    actual_inicio = fecha_inicio
 
-def generar_contexto_base(contrato_data, influencer_data, customer_data,grupos_cliente):
+    total_ig_stories = contrato_data.get("Agreed IG Stories", 0)
+    total_ig_posts = contrato_data.get("Agreed IG Posts", 0)
+    total_ig_reels = contrato_data.get("Agreed IG Reels",0)
+    total_tt_videos = contrato_data.get("Agreed TT Videos", 0)
+
+    # Calcular todos los cortes mensuales desde la fecha exacta
+    fechas_rangos = []
+    while actual_inicio < fecha_fin:
+        proximo_inicio = actual_inicio + relativedelta(months=1)
+        actual_fin = proximo_inicio - relativedelta(days=1)
+        if actual_fin > fecha_fin:
+            actual_fin = fecha_fin
+        fechas_rangos.append((actual_inicio, actual_fin))
+        actual_inicio = proximo_inicio
+
+    cantidad_meses = len(fechas_rangos)
+
+    def dividir(valor):
+        return round(valor / cantidad_meses) if cantidad_meses > 0 else 0
+
+    for inicio, fin in fechas_rangos:
+        meses.append({
+            "periodo": f"{inicio.strftime('%d/%m/%Y')} - {fin.strftime('%d/%m/%Y')}",
+            "ig_stories": dividir(total_ig_stories),
+            "ig_posts": dividir(total_ig_posts),
+            "ig_tv": 0,
+            "ig_reels": dividir(total_ig_reels),
+            "tt_videos": dividir(total_tt_videos),
+        })
+
+    return meses
+
+def generar_contexto_base(contrato_data, influencer_data, customer_data, grupos_cliente):
     fecha_inicio = datetime.strptime(contrato_data["Start Date"], "%Y-%m-%d")
     fecha_fin = datetime.strptime(contrato_data["End Date"], "%Y-%m-%d")
 
@@ -108,7 +143,7 @@ def generar_contexto_base(contrato_data, influencer_data, customer_data,grupos_c
     mes = get_spanish_month(now.strftime("%B"))
     anio = now.year
 
-    return {
+    contexto = {
         "NOMBRE_LEGAL_INFLUENCER": contrato_data.get("Full Name", ""),
         "CIUDAD": influencer_data.get("City") or "__________" if influencer_data else "__________",
         "EMAIL": influencer_data.get("Email") or "__________" if influencer_data else "__________",
@@ -148,5 +183,8 @@ def generar_contexto_base(contrato_data, influencer_data, customer_data,grupos_c
         "device_cost": contrato_data.get("Device Cost", "__________"),
         "total_interacciones": calcular_total_interacciones(contrato_data),
         "total_impresiones": calcular_total_impresiones(contrato_data),
-        "categorias": ", ".join(grupos_cliente)
+        "categorias": ", ".join(grupos_cliente),
+        "meses_contenido": generar_contenido_por_periodo(fecha_inicio, fecha_fin, contrato_data)
     }
+
+    return contexto

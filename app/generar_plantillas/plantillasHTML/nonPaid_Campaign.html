@@ -114,29 +114,38 @@
     b. El/la ‘INFLUENCER’ se compromete a cumplir con el siguiente número de publicaciones, las cuales se asignarán asignar para el uso de el ‘CLIENTE’ durante el período de duración de este acuerdo.
   </p>
 
-  <table>
-    <thead>
-      <tr>
-        <th style="text-align: center;">Período</th>
-        <th style="text-align: center;"># de IG Stories</th>
-        <th style="text-align: center;"># de IG Posts</th>
-        <th style="text-align: center;"># de IG TV</th>
-        <th style="text-align: center;"># de IG Reels</th>
-        <th style="text-align: center;"># de TikToks</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Rango de fecha del Mes1</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes2</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes3</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes4</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes5</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes6</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes7</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td>Rango de fecha del Mes8</td><td style="text-align: center;">6</td><td style="text-align: center;">2</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td><td style="text-align: center;">1</td></tr>
-      <tr><td><strong>Totales</strong></td><td style="text-align: center;"><strong>48 IG Stories</strong></td><td style="text-align: center;"><strong>16 IG Posts</strong></td><td style="text-align: center;"><strong>8 IG TV</strong></td><td style="text-align: center;"><strong>8 IG Reels</strong></td><td style="text-align: center;"><strong>8 TT Videos</strong></td></tr>
-    </tbody>
-  </table>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center;">Período</th>
+      <th style="text-align: center;"># de IG Stories</th>
+      <th style="text-align: center;"># de IG Posts</th>
+      <th style="text-align: center;"># de IG TV</th>
+      <th style="text-align: center;"># de IG Reels</th>
+      <th style="text-align: center;"># de TikToks</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for mes in meses_contenido %}
+    <tr>
+      <td>{{ mes.periodo }}</td>
+      <td style="text-align: center;">{{ mes.ig_stories }}</td>
+      <td style="text-align: center;">{{ mes.ig_posts }}</td>
+      <td style="text-align: center;">{{ mes.ig_tv }}</td>
+      <td style="text-align: center;">{{ mes.ig_reels }}</td>
+      <td style="text-align: center;">{{ mes.tt_videos }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td><strong>Totales</strong></td>
+      <td style="text-align: center;"><strong>{{ Agreed_IG_Stories }} IG Stories</strong></td>
+      <td style="text-align: center;"><strong>{{ Agreed_IG_Posts }} IG Posts</strong></td>
+      <td style="text-align: center;"><strong>0 IG TV</strong></td>
+      <td style="text-align: center;"><strong>{{ Agreed_IG_Reels}} IG Reels</strong></td>
+      <td style="text-align: center;"><strong>{{ Agreed_TT_Videos }} TT Videos</strong></td>
+    </tr>
+  </tbody>
+</table>
 
   <!-- Continuación del acuerdo -->
   <p>
